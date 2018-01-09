@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    tools:context="cloudsightapi.sampleapplication.MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/imageview_bg"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/btn_capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="@string/capture_image" />
+
+    <Button
+        android:id="@+id/btn_send_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_capture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="@string/send_image" />
+
+
+    <RelativeLayout
+        android:id="@+id/rlt_api_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_send_image"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_api_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="40dp"
+            android:text="@string/api_key_label" />
+
+        <EditText
+            android:id="@+id/et_api_key"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_api_key"
+            android:background="@drawable/edittext_bg"
+            android:ellipsize="end"
+            android:maxWidth="250dp"
+            android:minHeight="40dp"
+            android:padding="10dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/api_key" />
+
+        <TextView
+            android:id="@+id/tv_api_secret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/tv_api_key"
+            android:layout_alignStart="@+id/tv_api_key"
+            android:layout_below="@+id/tv_api_key"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:minHeight="40dp"
+            android:text="@string/secret_label" />
+
+        <EditText
+            android:id="@+id/et_api_secret"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_api_key"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv_api_secret"
+            android:background="@drawable/edittext_bg"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxWidth="250dp"
+            android:minHeight="40dp"
+            android:padding="10dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/api_secret" />
+
+        <TextView
+            android:id="@+id/tv_recognition_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_api_secret"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:maxWidth="325dp"
+            android:minWidth="325dp" />
+
+    </RelativeLayout>
+</RelativeLayout>
+
