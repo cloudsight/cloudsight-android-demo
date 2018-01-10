@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private static final String IMAGE_RESPONSE_URL = "http://api.cloudsight.ai/image_responses/";
 
     private Uri mOutputFileUri;
-    private ViewHolder mViewHolder;
+    private static ViewHolder mViewHolder;
 
 
     @Override
@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     Toast.makeText(getApplicationContext(), R.string.upload_success_message, Toast.LENGTH_SHORT).show();
                     Toast.makeText(getApplicationContext(), "Image URL : " + response.getString("url"), Toast.LENGTH_SHORT).show();
                     String token = response.getString("token");
-                    getAsyncImageResponse(token);
+                    new FetchTask((token)).execute();
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
@@ -126,21 +126,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
     }
 
-    public void getAsyncImageResponse(final String pToken) {
-        new AsyncTask<Void, Void, Void>() {
-            @Override
-            protected Void doInBackground(Void... voids) {
-                getImageResponse(pToken);
-                return null;
-            }
+    private class FetchTask extends AsyncTask<Void, Void, Void> {
 
-            @Override
-            protected void onPostExecute(Void aVoid) {
-                super.onPostExecute(aVoid);
-                mViewHolder.hideProgressDialog();
-            }
-        }.execute();
+        String token;
+
+        public FetchTask(String token) {
+            super();
+            this.token = token;
+        }
+
+        @Override
+        protected Void doInBackground(Void... voids) {
+            getImageResponse(token);
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            super.onPostExecute(aVoid);
+            mViewHolder.hideProgressDialog();
+        }
     }
+
 
     public void showImageResponseText(final String message) {
         runOnUiThread(new Runnable() {
