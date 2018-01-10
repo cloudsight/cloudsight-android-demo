@@ -3,11 +3,11 @@
     <string name="app_name">Sample Application</string>
     <string name="api_key">YOUR API KEY</string>
     <string name="api_secret">YOUR API SECRET</string>
-    <string name="processing_message">Processing Your Request....</string>
+    <string name="processing_message">Processing Your Request ...</string>
     <string name="no_image_selected_message">Please Capture or Select an Image to Proceed</string>
     <string name="upload_success_message">Image Uploaded Successfully!</string>
     <string name="upload_failure_message">Image Uploading Failed!</string>
-    <string name="recognization_failure_message">Image Cannot be Recognized. Please Try Again!</string>
+    <string name="fail_message">Image Cannot be Recognized. Please Try Again!</string>
     <string name="chooser_title">Take Image From:</string>
     <string name="image_recognized_as">Image Recognized as:\u0020</string>
     <string name="param_image">image_request[image]</string>

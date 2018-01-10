@@ -174,7 +174,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             flag[0] = true;
                             String status = response.getString("status");
                             if (!status.equals("completed")) {
-                                showImageResponseText(getString(R.string.recognization_failure_message));
+                                showImageResponseText(getString(R.string.fail_message));
                             } else {
                                 showImageResponseText(getString(R.string.image_recognized_as) + response.getString("name"));
                             }
