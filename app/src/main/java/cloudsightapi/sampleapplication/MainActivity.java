@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     Toast.makeText(getApplicationContext(), R.string.upload_success_message, Toast.LENGTH_SHORT).show();
                     Toast.makeText(getApplicationContext(), "Image URL : " + response.getString("url"), Toast.LENGTH_SHORT).show();
                     String token = response.getString("token");
-                    new FetchTask((token)).execute();
+                    new FetchTask(token).execute();
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
