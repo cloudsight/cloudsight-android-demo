@@ -4,10 +4,10 @@ This demo app built with Java demonstrates how easy it is to work with CloudSigh
 
 # Building
 
-You can build the project with Android Studio 2 but version 3 is preferred for a faster build time. The target SDK version for this app is 23 but this demo app has been compilete for SDK version 25. Once you start make an attempt to build, Android Studio should prompt you of missing SDKs that you can easily install to have a successful build.
+You can build the project with Android Studio 2 but version 3 is preferred for a faster build time. The target SDK version for this app is 23 but this demo app has been compilete for SDK version 25. Once you make an attempt to build, Android Studio should prompt you for missing SDKs that you can easily install to have a successful build.
 
 ## Deploying in an Emulator
-With Android Studio 3 testing this demo app couldn't be easier. You only need to clone this project to a location you prefer on your local machine and open the project with Android Studio then choose a deployment target on your available list of virtual devices with API version 26 of Android.
+With Android Studio 3 testing this demo app couldn't be easier. You only need to clone this project to a location you prefer on your local machine and open the project with Android Studio, then choose a deployment target on your available list of virtual devices with API version 26 of Android.
 
 ## Deploying on a Physical Device
 To test out this demo app on your physical device, there are a few things you must do:
@@ -50,7 +50,7 @@ From this point, after permiting the demo to access your images, you can capture
 
 ## Issues
 
-Please feel free to post issues or even contribute. If you have problems with setting this up on your local machines or device, please contact:
+Please feel free to post issues or even contribute. If you have problems with setting this up on your local machine or device, please contact:
 
 * **Chris Weilemann** - CloudSight Sr. Developer (2016-2017), CTO (2017 to present). [cweilemann@github](https://github.com/cweilemann), [chris@cloudsight](mailto:chris@cloudsight.ai)
 * **Emmanuel Hayford** - CloudSight Developer (2017 to present) [siaw23@github](https://github.com/siaw23), [emmanuel@cloudsight](mailto:emmanuel@cloudsight.ai)
