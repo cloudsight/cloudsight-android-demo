@@ -44,4 +44,13 @@ Once Gradle is finished successfully and upon launching the app, you should see 
 
 <img src="https://raw.githubusercontent.com/cloudsight/cloudsight-android-demo/add_readme/permission.png" alt="Permission" />
 
-From this point, after permiting the demo to access your images (Note: you don't have to allow permission to access images already on your device but you do need to allow the app to use your device's camera to capture images to send to CloudSight's API), you can capture an image or send one already on your device to CloudSight Inc. and watch the magic happen.
+From this point, after permiting the demo to access your images, you can capture an image or send one already on your device to CloudSight Inc. and watch the magic happen.
+
+**Note:** You don't have to allow permission to access images already on your device but you do need to allow the app to use your device's camera to capture images to send to CloudSight's API
+
+## Issues
+
+Please feel free to post issues or even contribute. If you have problems with setting this up on your local machines or device, please contact:
+
+* **Chris Weilemann** - CloudSight Sr. Developer (2016-2017), CTO (2017 to present). [cweilemann@github](https://github.com/cweilemann), [chris@cloudsight](mailto:chris@cloudsight.ai)
+* **Emmanuel Hayford** - CloudSight Developer (2017 to present) [siaw23@github](https://github.com/siaw23), [emmanuel@cloudsight](mailto:emmanuel@cloudsight.ai)
